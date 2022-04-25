@@ -190,7 +190,7 @@
                                 </goals>
                                 <configuration>
                                     <driver>com.mysql.jdbc.Driver</driver>
-                                    <url>jdbc:mysql://localhost:3306?useSSL=false</url>
+                                    <url>jdbc:mysql://localhost:3306?allowPublicKeyRetrieval=true&amp;useSSL=false</url>
                                     <username>root</username>
                                     <password>root</password>
                                     <forceMojoExecution>true</forceMojoExecution>
@@ -209,7 +209,7 @@
                                 </goals>
                                 <configuration>
                                     <driver>com.mysql.jdbc.Driver</driver>
-                                    <url>jdbc:mysql://localhost:3306/accesscontrol_pandp_service?useSSL=false&amp;createDatabaseIfNotExist=true</url>
+                                    <url>jdbc:mysql://localhost:3306/accesscontrol_pandp_service?allowPublicKeyRetrieval=true&amp;useSSL=false&amp;createDatabaseIfNotExist=true</url>
                                     <username>root</username>
                                     <password>root</password>
                                     <forceMojoExecution>true</forceMojoExecution>
@@ -229,7 +229,7 @@
                                 </goals>
                                 <configuration>
                                     <driver>com.mysql.jdbc.Driver</driver>
-                                    <url>jdbc:mysql://localhost:3306/user_manager?useSSL=false&amp;createDatabaseIfNotExist=true</url>
+                                    <url>jdbc:mysql://localhost:3306/user_manager?allowPublicKeyRetrieval=true&amp;useSSL=false&amp;createDatabaseIfNotExist=true</url>
                                     <username>root</username>
                                     <password>root</password>
                                     <forceMojoExecution>true</forceMojoExecution>
@@ -249,7 +249,7 @@
                                 </goals>
                                 <configuration>
                                     <driver>com.mysql.jdbc.Driver</driver>
-                                    <url>jdbc:mysql://localhost:3306/user_profile_manager?useSSL=false&amp;createDatabaseIfNotExist=true</url>
+                                    <url>jdbc:mysql://localhost:3306/user_profile_manager?allowPublicKeyRetrieval=true&amp;useSSL=false&amp;createDatabaseIfNotExist=true</url>
                                     <username>root</username>
                                     <password>root</password>
                                     <forceMojoExecution>true</forceMojoExecution>
@@ -297,7 +297,7 @@
                                 </goals>
                                 <configuration>
                                     <driver>com.mysql.jdbc.Driver</driver>
-                                    <url>jdbc:mysql://localhost:3306/?useSSL=false</url>
+                                    <url>jdbc:mysql://localhost:3306/?allowPublicKeyRetrieval=true&amp;useSSL=false</url>
                                     <username>root</username>
                                     <password>root</password>
                                     <forceMojoExecution>true</forceMojoExecution>
