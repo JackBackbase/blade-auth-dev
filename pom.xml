@@ -18,21 +18,5 @@
         <module>dbs</module>
     </modules>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>com.backbase.oss</groupId>
-                <artifactId>blade-maven-plugin</artifactId>
-                <version>4.21.0</version>
-                <inherited>false</inherited>
-                <configuration>
-                    <startupBlades>
-                        <startupBlade>platform</startupBlade>
-                    </startupBlades>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>
 

@@ -1,3 +1,12 @@
+logging:
+  level:
+    root: INFO
+management:
+  endpoint:
+    beans.enabled: true
+  endpoints:
+    web.exposure.include: "*"
+
 ---
 ### Live profile
 spring:
@@ -13,18 +22,21 @@ backbase:
     mtls:
       enabled: false
     public:
-      paths: "/integration-api/**"
+      paths: "/**"
+  accesscontrol:
+    token:
+      expiration: 1000
+      initPhrase: RandomInitVecto2
+      key: Bar12345Bar12345
 
-logging:
-  level:
-    root: INFO
-    com:
-      backbase: DEBUG
-    org:
-      apache:
-        http:
-          wire: DEBUG
-      springframework:
-        web:
-          filter:
-            CommonsRequestLoggingFilter: DEBUG
+
+#     com:
+#       backbase: DEBUG
+#     org:
+#       apache:
+#         http:
+#           wire: DEBUG
+#       springframework:
+#         web:
+#           filter:
+#             CommonsRequestLoggingFilter: DEBUG

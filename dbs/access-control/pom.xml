@@ -17,13 +17,13 @@
     <packaging>pom</packaging>
     <properties>
         <spring.datasource.driver-class-name>com.mysql.jdbc.Driver</spring.datasource.driver-class-name>
-        <spring.datasource.url.accesscontrol-pandp-service>jdbc:mysql://localhost:3306/accesscontrol_pandp_service?useSSL=false</spring.datasource.url.accesscontrol-pandp-service>
+        <spring.datasource.url.accesscontrol-pandp-service>jdbc:mysql://localhost:3306/accesscontrol_pandp_service?allowPublicKeyRetrieval=true&amp;useSSL=false</spring.datasource.url.accesscontrol-pandp-service>
         <spring.datasource.username.accesscontrol-pandp-service>root</spring.datasource.username.accesscontrol-pandp-service>
         <spring.datasource.password.accesscontrol-pandp-service>root</spring.datasource.password.accesscontrol-pandp-service>
-        <spring.datasource.url.user-manager>jdbc:mysql://localhost:3306/user_manager?useSSL=false</spring.datasource.url.user-manager>
+        <spring.datasource.url.user-manager>jdbc:mysql://localhost:3306/user_manager?allowPublicKeyRetrieval=true&amp;useSSL=false</spring.datasource.url.user-manager>
         <spring.datasource.username.user-manager>root</spring.datasource.username.user-manager>
         <spring.datasource.password.user-manager>root</spring.datasource.password.user-manager>
-        <spring.datasource.url.user-profile-manager>jdbc:mysql://localhost:3306/user_profile_manager?useSSL=false</spring.datasource.url.user-profile-manager>
+        <spring.datasource.url.user-profile-manager>jdbc:mysql://localhost:3306/user_profile_manager?allowPublicKeyRetrieval=true&amp;useSSL=false</spring.datasource.url.user-profile-manager>
         <spring.datasource.username.user-profile-manager>root</spring.datasource.username.user-profile-manager>
         <spring.datasource.password.user-profile-manager>root</spring.datasource.password.user-profile-manager>
         <port>8086</port>
