@@ -1006,4 +1006,5 @@
 {"username":"Albert","password":"{noop}Albert","roles":["USER","group_user(USER)"]},
 {"username":"Sarah","password":"{noop}Sarah","roles":["USER","group_user(USER)"]},
 {"username":"Peter","password":"{noop}Peter","roles":["USER","group_user(USER)"]},
-{"username":"aspuser","password":"{noop}aspuser","roles":["USER","group_user(USER)"]}]
+{"username":"ASPAdmin","password":"{noop}ASPAdmin","roles":["USER","group_user(USER)"]},
+{"username":"ASPUser","password":"{noop}ASPUser","roles":["USER","group_user(USER)"]}]

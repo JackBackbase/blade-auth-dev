@@ -1,6 +1,7 @@
 logging:
   level:
     root: INFO
+    ca.bnc.backbase.extension: DEBUG
 management:
   endpoint:
     beans.enabled: true

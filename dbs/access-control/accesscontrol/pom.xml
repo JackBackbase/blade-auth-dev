@@ -33,7 +33,7 @@
         <dependency>
             <groupId>ca.bnc.bne-backbase</groupId>
             <artifactId>access-control</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
+            <version>1.0.3-SNAPSHOT</version>
             <type>jar</type>
         </dependency>
     </dependencies>
@@ -55,22 +55,6 @@
                     </systemProperties>
                 </configuration>
             </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.2</version>
-                <configuration>
-                    <overlays>
-                        <overlay>
-                            <groupId>ca.bnc.bne-backbase</groupId>
-                            <artifactId>access-control</artifactId>
-                            <type>jar</type>
-                        </overlay>
-                    </overlays>
-                </configuration>
-            </plugin>
-
         </plugins>
     </build>
 
