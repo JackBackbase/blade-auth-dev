@@ -1,9 +1,8 @@
-# Backbase Project 
+# Backbase Blade with Auth-dev 
 
-This project is created by http://start.backbase.com 
+colima stop; colima start --cpu 6 --memory 12 --mount $HOME:w
 
 ## README files
 
 - [Backbase 6 :: Platform - Identity](platform/README.md)
 - [Backbase 6 :: DBS](dbs/README.md)
-- [Identity](identity/README.md)

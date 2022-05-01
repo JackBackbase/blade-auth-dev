@@ -1,9 +1,9 @@
 backbase:
-  accesscontrol:
+  accessgroup:
     token:
-      expiration: 1000
+      expiration: 30000
       initPhrase: RandomInitVecto2
-      key: Bar12345Bar12345  
+      key: Bar12345Bar12345
 
 ---
 ### Live profile

@@ -8,6 +8,19 @@ management:
   endpoints:
     web.exposure.include: "*"
 
+backbase:
+  security:
+    mtls:
+      enabled: false
+    public:
+      paths: "/**"
+  accesscontrol:
+    token:
+      expiration: 30000
+      initPhrase: RandomInitVecto2
+      key: Bar12345Bar12345
+
+
 ---
 ### Live profile
 spring:
@@ -18,17 +31,7 @@ spring:
     password: ${spring.datasource.password.accesscontrol-pandp-service}
     url: ${spring.datasource.url.accesscontrol-pandp-service}
 
-backbase:
-  security:
-    mtls:
-      enabled: false
-    public:
-      paths: "/**"
-  accesscontrol:
-    token:
-      expiration: 1000
-      initPhrase: RandomInitVecto2
-      key: Bar12345Bar12345
+
 
 
 #     com:

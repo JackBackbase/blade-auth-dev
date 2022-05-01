@@ -13,7 +13,7 @@
 
     <artifactId>accesscontrol</artifactId>
 
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
 
     <name>Backbase DBS :: Access Control :: accesscontrol</name>
 
@@ -29,12 +29,6 @@
             <groupId>com.backbase.dbs.accesscontrol</groupId>
             <artifactId>access-control</artifactId>
             <type>war</type>
-        </dependency>
-        <dependency>
-            <groupId>ca.bnc.bne-backbase</groupId>
-            <artifactId>access-control</artifactId>
-            <version>1.0.3-SNAPSHOT</version>
-            <type>jar</type>
         </dependency>
     </dependencies>
 
