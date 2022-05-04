@@ -27,7 +27,7 @@
         <ext.enc.secret.key>JWTEncKeyDontUseInProduction666!</ext.enc.secret.key>
         <user.context.key>JWTSecretKeyDontUseInProduction!</user.context.key>
 
-        <blade.openBrowserOnStartup>true</blade.openBrowserOnStartup>
+        <blade.openBrowserOnStartup>false</blade.openBrowserOnStartup>
 
         <blade.multiThreaded>true</blade.multiThreaded>
         <!-- Disable logging encoding -->

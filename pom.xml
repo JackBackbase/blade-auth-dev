@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.backbase.apps</groupId>
-    <artifactId>employee-app-services</artifactId>
+    <artifactId>blade-auth-dev</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
-    <name>Employee App Services</name>
-    <description>Services required by employee app</description>
+    <name>blade-auth-dev</name>
+    <description>blade-auth-dev</description>
 
     <modules>
         <module>platform</module>
@@ -19,4 +19,3 @@
     </modules>
 
 </project>
-

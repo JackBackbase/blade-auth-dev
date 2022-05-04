@@ -52,6 +52,13 @@ server:
     include-message: always
     include-binding-errors: always
 
+management:
+  endpoint:
+    beans.enabled: true
+    env.enabled: true
+  endpoints:
+    web.exposure.include: "*"
+
 backbase:
   activemq:
     enabled: false
