@@ -1,7 +1,7 @@
 ---
 ### Live profile
 spring:
-  profiles: live
+  config.activate.on-profile: live
   cache:
     caffeine:
       spec: ${spring.cache.caffeine.spec.audit-service}

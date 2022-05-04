@@ -1,7 +1,7 @@
 logging:
   level:
     root: INFO
-    ca.bnc.backbase.extension: DEBUG
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
 management:
   endpoint:
     beans.enabled: true
@@ -9,6 +9,8 @@ management:
     web.exposure.include: "*"
 
 backbase:
+  audit:
+    enabled: true
   security:
     mtls:
       enabled: false
