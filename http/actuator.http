@@ -1,4 +1,6 @@
-@service=http://localhost:8080/bb-authentication-token-converter-service
+# @service=http://localhost:8080/bb-authentication-token-converter-service
+
+@service=http://localhost:8080
 
 ###summary
 GET {{service}}/actuator/
