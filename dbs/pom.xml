@@ -22,7 +22,7 @@
 
         <messaging.password>password</messaging.password>
 
-        <dbs.version>2022.02</dbs.version>
+        <dbs.version>2022.05</dbs.version>
 
         <jdbc.driver.groupId>mysql</jdbc.driver.groupId>
         <jdbc.driver.artifactId>mysql-connector-java</jdbc.driver.artifactId>

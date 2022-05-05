@@ -19,7 +19,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <dockerfile-maven-version>1.4.9</dockerfile-maven-version>
 
-        <platform-bom.version>2022.02</platform-bom.version>
+        <platform-bom.version>2022.05</platform-bom.version>
         <auth-dev.version>1.37.0</auth-dev.version>
         <port>8080</port>
         <sig.secret.key>JWTSecretKeyDontUseInProduction!</sig.secret.key>
