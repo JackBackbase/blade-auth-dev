@@ -1,0 +1,29 @@
+@service=http://localhost:8080/bb-authentication-token-converter-service
+
+###summary
+GET {{service}}/actuator/
+
+###health
+GET {{service}}/actuator/health
+
+###info
+GET {{service}}/actuator/info
+
+###mappings
+GET {{service}}/actuator/mappings
+
+###configprops
+GET {{service}}/actuator/configprops
+
+###env
+GET {{service}}/actuator/env
+
+###beans
+GET {{service}}/actuator/beans
+
+###conditions
+GET {{service}}/actuator/conditions
+
+###conditions
+GET {{service}}/actuator/httptrace
+

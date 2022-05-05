@@ -56,6 +56,10 @@ management:
   endpoint:
     beans.enabled: true
     env.enabled: true
+    mappings.enabled: true
+    configprops.enabled: true
+    conditions.enabled: true
+    httptrace.enabled: true
   endpoints:
     web.exposure.include: "*"
 

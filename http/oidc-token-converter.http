@@ -1,0 +1,6 @@
+### GET-SVC-TOKEN-OIDC-CONVERTER
+POST /oauth/token
+Host: localhost:9092
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&client_id=bb-client&client_secret=bb-secret
