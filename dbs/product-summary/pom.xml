@@ -17,7 +17,7 @@
 
     <properties>
         <spring.datasource.driver-class-name>com.mysql.jdbc.Driver</spring.datasource.driver-class-name>
-        <spring.datasource.url.arrangement-manager>jdbc:mysql://localhost:3306/arrangement_manager?useSSL=false</spring.datasource.url.arrangement-manager>
+        <spring.datasource.url.arrangement-manager>jdbc:mysql://localhost:3306/arrangement_manager?allowPublicKeyRetrieval=true&amp;useSSL=false</spring.datasource.url.arrangement-manager>
         <spring.datasource.username.arrangement-manager>root</spring.datasource.username.arrangement-manager>
         <spring.datasource.password.arrangement-manager>root</spring.datasource.password.arrangement-manager>
         <port>8082</port>
@@ -25,7 +25,7 @@
     </properties>
 
     <modules>
-        <module>account-mock</module>
+        <!-- <module>account-mock</module> -->
         <module>arrangement-manager</module>
     </modules>
 
