@@ -2,11 +2,20 @@
 
 @service=http://localhost:8080
 
+
+# @service=https://app.ca.cse.live.backbaseservices.com
+
 ###summary
 GET {{service}}/actuator/
 
 ###health
 GET {{service}}/actuator/health
+
+###liveness
+GET {{service}}/actuator/health/liveness
+
+###readiness
+GET {{service}}/actuator/health/readiness
 
 ###info
 GET {{service}}/actuator/info
@@ -28,4 +37,8 @@ GET {{service}}/actuator/conditions
 
 ###conditions
 GET {{service}}/actuator/httptrace
+
+###conditions
+GET {{service}}/actuator/gateway/routes
+Authorization: Basic YWRtaW46YWRtaW4=
 

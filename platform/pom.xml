@@ -20,7 +20,7 @@
         <dockerfile-maven-version>1.4.9</dockerfile-maven-version>
 
         <platform-bom.version>2022.02</platform-bom.version>
-        <auth-dev.version>1.37.0</auth-dev.version>
+        <auth-dev.version>1.38.0-SNAPSHOT</auth-dev.version>
         <port>8080</port>
         <sig.secret.key>JWTSecretKeyDontUseInProduction!</sig.secret.key>
         <ext.sig.secret.key>JWTSecretKeyDontUseInProduction!</ext.sig.secret.key>
