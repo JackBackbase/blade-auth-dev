@@ -75,10 +75,9 @@
                     <version>4.21.0</version>
                     <configuration>
                         <multiThreaded>true</multiThreaded>
-                        <!--<backbaseConfigDir>${project.build.directory}/config/backbase</backbaseConfigDir>-->
-                        <!--<contextFileDir>${project.build.directory}/config/tomcat/conf/Catalina/localhost/</contextFileDir>-->
-                        <!-- Generic System Properties for all services -->
                         <masterBladeAddress>http://localhost:8080</masterBladeAddress>
+                        <detectAndConfigureSpringConfigLocation>true</detectAndConfigureSpringConfigLocation>
+                        <!-- Generic System Properties for all services -->
                         <systemProperties>
                             <SIG_SECRET_KEY>${sig.secret.key}</SIG_SECRET_KEY>
                             <USERCTX_KEY>${user.context.key}</USERCTX_KEY>
@@ -116,38 +115,6 @@
                             <version>${jdbc.driver.version}</version>
                         </dependency>
                     </dependencies>
-                </plugin>
-                <plugin>
-                    <groupId>com.spotify</groupId>
-                    <artifactId>dockerfile-maven-plugin</artifactId>
-                    <version>${dockerfile-maven-version}</version>
-                    <executions>
-                        <execution>
-                            <id>default</id>
-                            <goals>
-                                <goal>build</goal>
-                            </goals>
-                        </execution>
-                        <execution>
-                            <id>tag-image</id>
-                            <goals>
-                                <goal>tag</goal>
-                                <goal>push</goal>
-                            </goals>
-                            <phase>deploy</phase>
-                            <configuration>
-                                <repository>${docker.registry.url}/${project.artifactId}</repository>
-                                <tag>${dbs.version}</tag>
-                            </configuration>
-                        </execution>
-                    </executions>
-                    <configuration>
-                        <repository>${project.artifactId}</repository>
-                        <username>${docker.registry.username}</username>
-                        <password>${docker.registry.password}</password>
-                        <tag>${dbs.version}</tag>
-                        <pullNewerImage>false</pullNewerImage>
-                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -192,5 +159,4 @@
             </plugins>
         </pluginManagement>
     </build>
-
 </project>

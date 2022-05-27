@@ -17,7 +17,6 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <dockerfile-maven-version>1.4.9</dockerfile-maven-version>
 
         <platform-bom.version>2022.02</platform-bom.version>
         <auth-dev.version>1.38.0-SNAPSHOT</auth-dev.version>
@@ -37,11 +36,6 @@
         <sso.jwt.external.expiration>3600</sso.jwt.external.expiration>
         <sso.jwt.external.renew>1800</sso.jwt.external.renew>
         <sso.jwt.external.not_valid_after>86400</sso.jwt.external.not_valid_after>
-
-        <!-- Docker Registry -->
-        <docker.registry.url>remote.registry.url</docker.registry.url>
-        <docker.registry.username></docker.registry.username>
-        <docker.registry.password></docker.registry.password>
     </properties>
 
     <dependencyManagement>
@@ -150,38 +144,6 @@
         </plugins>
         <pluginManagement>
             <plugins>
-                <plugin>
-                    <groupId>com.spotify</groupId>
-                    <artifactId>dockerfile-maven-plugin</artifactId>
-                    <version>${dockerfile-maven-version}</version>
-                    <executions>
-                        <execution>
-                            <id>default</id>
-                            <goals>
-                                <goal>build</goal>
-                            </goals>
-                        </execution>
-                        <execution>
-                            <id>tag-image</id>
-                            <goals>
-                                <goal>tag</goal>
-                                <goal>push</goal>
-                            </goals>
-                            <phase>deploy</phase>
-                            <configuration>
-                                <repository>${docker.registry.url}/${project.artifactId}</repository>
-                                <tag>${platform-bom.version}</tag>
-                            </configuration>
-                        </execution>
-                    </executions>
-                    <configuration>
-                        <repository>${project.artifactId}</repository>
-                        <username>${docker.registry.username}</username>
-                        <password>${docker.registry.password}</password>
-                        <tag>${platform-bom.version}</tag>
-                        <pullNewerImage>false</pullNewerImage>
-                    </configuration>
-                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>

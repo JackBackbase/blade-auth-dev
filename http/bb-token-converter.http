@@ -1,7 +1,0 @@
-### GET-SVC-TOKEN-BB-CONVERTER
-POST /bb-authentication-token-converter-service/oauth/token
-Host: localhost:8080
-Content-Type: application/x-www-form-urlencoded
-
-grant_type=client_credentials&client_id=bb-client&client_secret=bb-secret
-

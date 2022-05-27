@@ -2,6 +2,10 @@
 Docker reference
 colima stop; colima start --cpu 6 --memory 12 --mount $HOME:w
 
+Blade 
+https://start.backbase.com/blade
+https://github.com/Backbase/blade
+
 Backbase repo
 https://repo.backbase.com/
 
