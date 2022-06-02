@@ -11,14 +11,14 @@ services:
   #     - "8085:5555"
   #     - "9085:6666"
   
-  dynamodb:
-    image: amazon/dynamodb-local
-    container_name: ingestion-record-db
-    ports:
-      - "8001:8000"
+  # dynamodb:
+  #   image: amazon/dynamodb-local
+  #   container_name: ingestion-record-db
+  #   ports:
+  #     - "8001:8000"
 
   activemq:
-    image: rmohr/activemq:5.15.9
+    image: rmohr/activemq
     container_name: employee-app-services_activemq
     ports:
       - "61616:61616"

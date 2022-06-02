@@ -4,6 +4,36 @@ backbase:
       expiration: 1000
       initPhrase: RandomInitVecto2
       key: Bar12345Bar12345  
+  api:
+    extensions:
+      classes:
+          com.backbase.integration.accessgroup.rest.spec.v2.accessgroups.serviceagreements.ServiceAgreementPostRequestBody: additional-le-data
+          com.backbase.integration.accessgroup.rest.spec.v2.accessgroups.serviceagreements.ServiceAgreementPutRequestBody: additional-le-data
+      property-sets:
+        additional-le-data:
+          properties:
+            - property-name: formattedFullAddress
+              type: string
+            - property-name: streetNumber
+              type: string
+            - property-name: streetTypeDesignator
+              type: string
+            - property-name: streetDirectionDesignator
+              type: string
+            - property-name: streetName
+              type: string
+            - property-name: streetUnitDesignator
+              type: string
+            - property-name: streetUnitNumber
+              type: string
+            - property-name: city
+              type: string
+            - property-name: country
+              type: string
+            - property-name: province
+              type: string
+            - property-name: postalCode
+              type: string
 
 ---
 ### Live profile

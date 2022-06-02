@@ -2,6 +2,16 @@ logging:
   level:
     root: INFO
     ca.bnc.backbase.extension: DEBUG
+    # com:
+    #   backbase: DEBUG
+    org:
+      apache:
+        http:
+          wire: DEBUG
+      springframework:
+        web:
+          filter:
+            CommonsRequestLoggingFilter: DEBUG
 management:
   endpoint:
     beans.enabled: true
@@ -29,15 +39,37 @@ backbase:
       expiration: 1000
       initPhrase: RandomInitVecto2
       key: Bar12345Bar12345
-
-
-    com:
-      backbase: DEBUG
-    org:
-      apache:
-        http:
-          wire: DEBUG
-      springframework:
-        web:
-          filter:
-            CommonsRequestLoggingFilter: DEBUG
+  api:
+    extensions:
+      classes:
+        com.backbase.presentation.legalentity.rest.spec.v2.legalentities.CreateLegalEntitiesPostRequestBody: additional-le-data
+        com.backbase.presentation.legalentity.rest.spec.v2.legalentities.LegalEntityPut: additional-le-data
+        com.backbase.presentation.legalentity.rest.spec.v2.legalentities.LegalEntity: additional-le-data
+        com.backbase.presentation.legalentity.rest.spec.v2.legalentities.LegalEntitiesPostRequestBody: additional-le-data
+        com.backbase.presentation.legalentity.rest.spec.v2.legalentities.PresentationCreateLegalEntityItemPostRequestBody: additional-le-data
+        com.backbase.presentation.legalentity.rest.spec.v2.legalentities.LegalEntityAsParticipantPostRequestBody: additional-le-data
+      property-sets:
+        additional-le-data:
+          properties:
+            - property-name: formattedFullAddress
+              type: string
+            - property-name: streetNumber
+              type: string
+            - property-name: streetTypeDesignator
+              type: string
+            - property-name: streetDirectionDesignator
+              type: string
+            - property-name: streetName
+              type: string
+            - property-name: streetUnitDesignator
+              type: string
+            - property-name: streetUnitNumber
+              type: string
+            - property-name: city
+              type: string
+            - property-name: country
+              type: string
+            - property-name: province
+              type: string
+            - property-name: postalCode
+              type: string
