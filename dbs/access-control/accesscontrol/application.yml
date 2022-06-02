@@ -31,13 +31,13 @@ backbase:
       key: Bar12345Bar12345
 
 
-#     com:
-#       backbase: DEBUG
-#     org:
-#       apache:
-#         http:
-#           wire: DEBUG
-#       springframework:
-#         web:
-#           filter:
-#             CommonsRequestLoggingFilter: DEBUG
+    com:
+      backbase: DEBUG
+    org:
+      apache:
+        http:
+          wire: DEBUG
+      springframework:
+        web:
+          filter:
+            CommonsRequestLoggingFilter: DEBUG

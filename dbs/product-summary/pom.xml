@@ -96,10 +96,10 @@
                             <name>Product Summary</name>
                             <multiThreaded>true</multiThreaded>
                             <webApps>
-                                <webApp>
+                                <!-- <webApp>
 
                                     <module>account-mock</module>
-                                </webApp>
+                                </webApp> -->
                                 <webApp>
 
                                     <module>arrangement-manager</module>

@@ -3,13 +3,13 @@
 spring:
   profiles: live
 
-logging:
-  level:
-    org:
-      apache:
-        http:
-          wire: DEBUG
-      springframework:
-        web:
-          filter:
-            CommonsRequestLoggingFilter: DEBUG
+# logging:
+#   level:
+#     org:
+#       apache:
+#         http:
+#           wire: DEBUG
+#       springframework:
+#         web:
+#           filter:
+#             CommonsRequestLoggingFilter: DEBUG
