@@ -19,6 +19,15 @@ backbase:
       account:
         integration:
           service-id: account-mock
+  arrangement:
+    product-kinds:
+      use-db: false
+      kinds:
+        BNC:
+          name: "BNC account"
+          uri: bnc-account
+          id: 10
+          custom-order: 10
 
 logging:
   level:
