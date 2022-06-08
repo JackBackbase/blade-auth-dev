@@ -33,7 +33,7 @@
         <dependency>
             <groupId>ca.bnc.bne-backbase</groupId>
             <artifactId>access-control</artifactId>
-            <version>1.0.5-SNAPSHOT</version>
+            <version>1.0.6-SNAPSHOT</version>
             <type>jar</type>
         </dependency>
     </dependencies>

@@ -4,6 +4,10 @@
 
 docker-compose up -d
 
+Active MQ
+http://localhost:8161/admin/
+
+
 
 aws configure --profile local
 local/local/ca-central-1
@@ -20,6 +24,15 @@ dynamolocal create-table --table-name LOCAL-IngestionRecord --attribute-definiti
 dynamolocal scan --table-name LOCAL-IngestionRecord > file_name.json
 dynamolocal describe-table --table-name LOCAL-IngestionRecord
 dynamolocal get-item --table-name LOCAL-IngestionRecord --key '{ "bncId": {"S": "57D089A268BF40F3C3828201B64B4FB757D089A268BF40F3C3828201B64B4FB7"}}'
+
+
+FE
+
+npm config set registry https://nexus.bnc.ca/repository/5327-npm-development/
+npm login
+npm run start:local
+
+    
 
 
 
