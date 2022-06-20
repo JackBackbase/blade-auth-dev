@@ -41,5 +41,13 @@ services:
       - ./mysql/config:/etc/mysql/conf.d
       - employee-app-services_mysql_data:/var/lib/mysql
 
+  wiremock-studio:
+    image: up9inc/wiremock-studio:2.32.0-18
+    ports:
+     - "9000:9000"
+     - "8011-8019:8011-8019"
+    volumes:
+      - /Users/jack.kang@bnc.ca/BNE/TOOLS/wiremockCollections/wiremock:/home/wiremock
+
 volumes:
   employee-app-services_mysql_data:

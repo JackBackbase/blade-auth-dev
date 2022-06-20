@@ -17,7 +17,7 @@
 
     <properties>
         <spring.datasource.driver-class-name>com.mysql.jdbc.Driver</spring.datasource.driver-class-name>
-        <spring.datasource.url.audit-service>jdbc:mysql://localhost:3306/audit_persistence?useSSL=false</spring.datasource.url.audit-service>
+        <spring.datasource.url.audit-service>jdbc:mysql://localhost:3306/audit_persistence?allowPublicKeyRetrieval=true&amp;useSSL=false</spring.datasource.url.audit-service>
         <spring.datasource.username.audit-service>root</spring.datasource.username.audit-service>
         <spring.datasource.password.audit-service>root</spring.datasource.password.audit-service>
         <spring.cache.caffeine.spec.audit-service>expireAfterWrite=10s</spring.cache.caffeine.spec.audit-service>
@@ -130,7 +130,7 @@
                                 </goals>
                                 <configuration>
                                     <driver>com.mysql.jdbc.Driver</driver>
-                                    <url>jdbc:mysql://localhost:3306?useSSL=false</url>
+                                    <url>jdbc:mysql://localhost:3306?allowPublicKeyRetrieval=true&amp;useSSL=false</url>
                                     <username>root</username>
                                     <password>root</password>
                                     <forceMojoExecution>true</forceMojoExecution>
@@ -147,7 +147,7 @@
                                 </goals>
                                 <configuration>
                                     <driver>com.mysql.jdbc.Driver</driver>
-                                    <url>jdbc:mysql://localhost:3306/audit_persistence?useSSL=false&amp;createDatabaseIfNotExist=true</url>
+                                    <url>jdbc:mysql://localhost:3306/audit_persistence?allowPublicKeyRetrieval=true&amp;useSSL=false&amp;createDatabaseIfNotExist=true</url>
                                     <username>root</username>
                                     <password>root</password>
                                     <forceMojoExecution>true</forceMojoExecution>
@@ -195,7 +195,7 @@
                                 </goals>
                                 <configuration>
                                     <driver>com.mysql.jdbc.Driver</driver>
-                                    <url>jdbc:mysql://localhost:3306/?useSSL=false</url>
+                                    <url>jdbc:mysql://localhost:3306/?allowPublicKeyRetrieval=true&amp;useSSL=false</url>
                                     <username>root</username>
                                     <password>root</password>
                                     <forceMojoExecution>true</forceMojoExecution>
