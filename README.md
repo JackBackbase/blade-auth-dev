@@ -2,7 +2,11 @@
 Docker reference
 colima stop; colima start --cpu 6 --memory 12 --mount $HOME:w
 
-Blade 
+Blade operations
+mvn clean install -Pclean-database
+mvn clean blade:run
+
+Blade references
 https://start.backbase.com/blade
 https://github.com/Backbase/blade
 

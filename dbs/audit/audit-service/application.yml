@@ -10,3 +10,8 @@ spring:
     username: ${spring.datasource.username.audit-service}
     password: ${spring.datasource.password.audit-service}
     url: ${spring.datasource.url.audit-service}
+
+backbase:
+  audit:
+    legal-entity-id-constraint-enabled: false
+    restrict-ip-access-enabled: false

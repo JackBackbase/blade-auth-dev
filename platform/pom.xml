@@ -58,7 +58,6 @@
 
     <modules>
         <module>registry</module>
-        <module>edge</module>
         <module>authentication-dev</module>
         <module>bb-authentication-token-converter-service</module>
     </modules>
