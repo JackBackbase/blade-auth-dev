@@ -4,6 +4,12 @@ backbase:
       expiration: 30000
       initPhrase: RandomInitVecto2
       key: Bar12345Bar12345
+  data-group:
+    types:
+      - ARRANGEMENTS
+      - CONTACTS
+      - CUSTOMERS
+      - CUSTOM
 
 ---
 ### Live profile
