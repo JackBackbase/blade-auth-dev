@@ -60,6 +60,7 @@
         <module>registry</module>
         <module>authentication-dev</module>
         <module>bb-authentication-token-converter-service</module>
+        <module>edge</module>
     </modules>
 
     <build>
